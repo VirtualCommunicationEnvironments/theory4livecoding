@@ -37,3 +37,15 @@ var students = [];
 for (var i = 0; i < studentsData.length; i++){
     students.push(new Student(studentsData[i].name, studentsData[i].surname, studentsData[i].age));
 }
+
+
+var studentsContainer = document.createElement('div');
+
+for (var i = 0; i < students.length; i++){
+    var el = document.createElement('div');
+    el.innerHTML = students[i].getFullName();
+
+    studentsContainer.append(el);
+}
+
+document.body.append(studentsContainer);
