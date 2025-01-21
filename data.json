@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "name": "Gerard",
+      "surname": "Llorach",
+      "age": 33
+    },
+    {
+      "name": "Eva",
+      "surname": "Garolera",
+      "age": 25
+    },
+    {
+      "name": "Josep",
+      "surname": "Blat",
+      "age": 70
+    },
+    {
+      "name": "Ricardo",
+      "surname": "Marqués",
+      "age": 40
+    }
+  ]
+}
