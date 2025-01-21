@@ -1,0 +1,1 @@
+var a = new Student("Gerard", "Llorach", 89);
