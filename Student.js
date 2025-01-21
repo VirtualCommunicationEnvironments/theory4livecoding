@@ -8,5 +8,6 @@ class Student {
         this.surname = surname;
         this.age = age;
 
+        
     }
 }
