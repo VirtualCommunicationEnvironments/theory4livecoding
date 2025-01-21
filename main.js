@@ -40,6 +40,7 @@ for (var i = 0; i < studentsData.length; i++){
 
 
 var studentsContainer = document.createElement('div');
+studentsContainer.classList.add("students-container");
 
 for (var i = 0; i < students.length; i++){
     var el = document.createElement('div');
