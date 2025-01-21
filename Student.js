@@ -8,6 +8,10 @@ class Student {
         this.surname = surname;
         this.age = age;
 
-        
+
+    }
+
+    getFullName = () => {
+        return this.name + " " + this.surname;
     }
 }
