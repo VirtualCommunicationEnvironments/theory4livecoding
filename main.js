@@ -34,19 +34,30 @@ var studentsData = [
 
 var students = [];
 
-for (var i = 0; i < studentsData.length; i++){
+for (var i = 0; i < studentsData.length; i++) {
     students.push(new Student(studentsData[i].name, studentsData[i].surname, studentsData[i].age));
 }
 
-
+// Create students container
 var studentsContainer = document.createElement('div');
 studentsContainer.classList.add("students-container");
 
-for (var i = 0; i < students.length; i++){
+// Create students elements
+for (var i = 0; i < students.length; i++) {
     var el = document.createElement('div');
     el.innerHTML = students[i].getFullName();
-
+    // Add event
+    el.addEventListener("click", function () {
+        // Delete class selected from all elements
+        for (var j = 0; j < studentsContainer.children.length; j++) {
+            studentsContainer.children[j].classList.remove("selected");
+        }
+        // Add class selected to clicked element
+        this.classList.add("selected");
+    });
     studentsContainer.append(el);
 }
 
+
+// Add to DOM
 document.body.append(studentsContainer);
